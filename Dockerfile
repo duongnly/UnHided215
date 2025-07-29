@@ -15,7 +15,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 # 4. Copy the rest of your application code from the repository
 COPY . .
 
-EXPOSE 7860
+EXPOSE 8888
 
 # Your CMD is fine, no changes needed here
-CMD ["uvicorn", "run:main_app", "--host", "0.0.0.0", "--port", "7860", "--workers", "4"]
+CMD ["uvicorn", "run:main_app", "--host", "0.0.0.0", "--port", "8888", "--workers", "4"]
